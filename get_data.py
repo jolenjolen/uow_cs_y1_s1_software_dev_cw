@@ -1,5 +1,5 @@
 
-def get_filename_from_date(day,month,year): # explain this function 👇
+def get_filename_from_date(day,month,year): 
 
     if month <=9: 
         if day <=9:
@@ -9,7 +9,7 @@ def get_filename_from_date(day,month,year): # explain this function 👇
     else:
         return f"traffic_data{day}{month}{year}.csv"
     
-def fetch_data_from_file(filename): # explain this function 👇
+def fetch_data_from_file(filename): 
     data_list=[]
     
     try:
@@ -27,8 +27,8 @@ def fetch_data_from_file(filename): # explain this function 👇
 
 main():
   # ...
-  filename=get_filename_from_date(day,month,year) # 👈 explain what this does
-  data_list,row_length=fetch_data_from_file(filename) # 👈 explain what this does
-  if data_list=="" and row_length==0: ## 👈 explain
-      continue                        ## 👈 explain
+  filename=get_filename_from_date(day,month,year) 
+  data_list,row_length=fetch_data_from_file(filename)
+  if data_list=="" and row_length==0:
+      continue                        
   # ...
